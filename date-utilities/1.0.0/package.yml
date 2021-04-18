@@ -1,0 +1,391 @@
+# Date Utilities
+
+name: date-utilities
+parent: default
+
+matches:
+  - trigger: ':d0'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d0'
+  - trigger: ':d1'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d1'
+  - trigger: ':d2'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d2'
+  - trigger: ':d3'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d3'
+  - trigger: ':d4'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d4'
+  - trigger: ':d5'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d5'
+  - trigger: ':d6'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d6'
+  - trigger: ':d7'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d7'
+  - trigger: ':d-1'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-1'
+  - trigger: ':d-2'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-2'
+  - trigger: ':d-3'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-3'
+  - trigger: ':d-4'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-4'
+  - trigger: ':d-5'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-5'
+  - trigger: ':d-6'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-6'
+  - trigger: ':d-7'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-d-7'
+  - trigger: ':lsu'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lsu'
+  - trigger: ':lmo'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lmo'
+  - trigger: ':ltu'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-ltu'
+  - trigger: ':lwe'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lwe'
+  - trigger: ':lth'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lth'
+  - trigger: ':lfr'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lfr'
+  - trigger: ':lsa'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-lsa'
+  - trigger: ':nsu'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nsu'
+  - trigger: ':nmo'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nmo'
+  - trigger: ':ntu'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-ntu'
+  - trigger: ':nwe'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nwe'
+  - trigger: ':nth'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nth'
+  - trigger: ':nfr'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nfr'
+  - trigger: ':nsa'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-nsa'
+  - trigger: ':1dtm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-1dtm'
+  - trigger: ':ldtm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-ldtm'
+  - trigger: ':1dnm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-1dnm'
+  - trigger: ':ldnm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-ldnm'
+  - trigger: ':1dpm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-1dpm'
+  - trigger: ':ldpm'
+    replace: '{{output}}'
+    force_clipboard: true
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - '-ldpm'

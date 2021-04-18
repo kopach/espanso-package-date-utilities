@@ -1,0 +1,57 @@
+{
+  "name": "package-version-finder",
+  "description": "Find NPM package version for file",
+  "license": "MIT",
+  "author": "Ihor Kopach (https://kopach.dev)",
+  "homepage": "https://github.com/kopach/package-version-finder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kopach/package-version-finder"
+  },
+  "bugs": {
+    "url": "https://github.com/kopach/package-version-finder/issues"
+  },
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "adr:update": "adr update",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "build:watch": "npm run build -- --watch",
+    "lint": "tslint --project tsconfig.json src/**/*.ts",
+    "lint-package.json": "prettier-package-json --write",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run build",
+    "release": "np --no-2fa",
+    "postshrinkwrap": "lockfix"
+  },
+  "dependencies": {
+    "commander": "6.2.1",
+    "date-fns": "^2.21.1",
+    "execa": "4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/node": "14.14.35",
+    "adr": "1.3.1",
+    "lockfix": "2.0.0",
+    "np": "https://github.com/pixelastic/np/tarball/c3ab2e3b053c7da0ce40a572ca1616273ac080f8",
+    "prettier": "2.2.1",
+    "prettier-package-json": "2.1.3",
+    "rimraf": "3.0.2",
+    "ts-node": "9.1.1",
+    "tslint": "6.1.3",
+    "tslint-clean-code": "0.2.10",
+    "tslint-config-airbnb": "5.11.2",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "9.0.0",
+    "tslint-no-circular-imports": "0.7.0",
+    "tslint-plugin-prettier": "2.3.0",
+    "typescript": "4.2.3"
+  }
+}

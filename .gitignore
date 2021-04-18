@@ -1,0 +1,12 @@
+yarn.lock
+node_modules/
+coverage/
+.nyc_output/
+test/fixtures/outputs/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.log
