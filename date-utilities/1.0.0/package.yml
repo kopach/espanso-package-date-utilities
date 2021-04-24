@@ -6,7 +6,6 @@ parent: default
 matches:
   - trigger: ':d0'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -17,7 +16,6 @@ matches:
             - '--d0'
   - trigger: ':d1'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -28,7 +26,6 @@ matches:
             - '--d1'
   - trigger: ':d2'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -39,7 +36,6 @@ matches:
             - '--d2'
   - trigger: ':d3'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -50,7 +46,6 @@ matches:
             - '--d3'
   - trigger: ':d4'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -61,7 +56,6 @@ matches:
             - '--d4'
   - trigger: ':d5'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -72,7 +66,6 @@ matches:
             - '--d5'
   - trigger: ':d6'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -83,7 +76,6 @@ matches:
             - '--d6'
   - trigger: ':d7'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -94,7 +86,6 @@ matches:
             - '--d7'
   - trigger: ':d-1'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -105,7 +96,6 @@ matches:
             - '--d-1'
   - trigger: ':d-2'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -116,7 +106,6 @@ matches:
             - '--d-2'
   - trigger: ':d-3'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -127,7 +116,6 @@ matches:
             - '--d-3'
   - trigger: ':d-4'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -138,7 +126,6 @@ matches:
             - '--d-4'
   - trigger: ':d-5'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -149,7 +136,6 @@ matches:
             - '--d-5'
   - trigger: ':d-6'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -160,7 +146,6 @@ matches:
             - '--d-6'
   - trigger: ':d-7'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -171,7 +156,6 @@ matches:
             - '--d-7'
   - trigger: ':lsu'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -182,7 +166,6 @@ matches:
             - '--lsu'
   - trigger: ':lmo'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -193,7 +176,6 @@ matches:
             - '--lmo'
   - trigger: ':ltu'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -204,7 +186,6 @@ matches:
             - '--ltu'
   - trigger: ':lwe'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -215,7 +196,6 @@ matches:
             - '--lwe'
   - trigger: ':lth'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -226,7 +206,6 @@ matches:
             - '--lth'
   - trigger: ':lfr'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -237,7 +216,6 @@ matches:
             - '--lfr'
   - trigger: ':lsa'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -248,7 +226,6 @@ matches:
             - '--lsa'
   - trigger: ':nsu'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -259,7 +236,6 @@ matches:
             - '--nsu'
   - trigger: ':nmo'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -270,7 +246,6 @@ matches:
             - '--nmo'
   - trigger: ':ntu'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -281,7 +256,6 @@ matches:
             - '--ntu'
   - trigger: ':nwe'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -292,7 +266,6 @@ matches:
             - '--nwe'
   - trigger: ':nth'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -303,7 +276,6 @@ matches:
             - '--nth'
   - trigger: ':nfr'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -314,7 +286,6 @@ matches:
             - '--nfr'
   - trigger: ':nsa'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -325,7 +296,6 @@ matches:
             - '--nsa'
   - trigger: ':1dtm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -336,7 +306,6 @@ matches:
             - '--1dtm'
   - trigger: ':ldtm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -347,7 +316,6 @@ matches:
             - '--ldtm'
   - trigger: ':1dnm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -358,7 +326,6 @@ matches:
             - '--1dnm'
   - trigger: ':ldnm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -369,7 +336,6 @@ matches:
             - '--ldnm'
   - trigger: ':1dpm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
@@ -380,7 +346,6 @@ matches:
             - '--1dpm'
   - trigger: ':ldpm'
     replace: '{{output}}'
-    force_clipboard: true
     vars:
       - name: output
         type: script
