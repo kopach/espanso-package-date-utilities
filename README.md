@@ -14,7 +14,10 @@
 
 ## Installation
 
-Make sure you have already installed [Espanso](https://espanso.org/install) first.
+> ⚠️ To use this package, make sure you have installed
+>
+> 1. [Espanso](https://espanso.org/install)
+> 2. [Node](https://nodejs.org)
 
 ```sh
 espanso install date-utilities
