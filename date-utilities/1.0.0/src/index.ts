@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import {
-  add,
-  format,
-  startOfMonth,
-  sub,
-  nextDay,
-  lastDayOfMonth,
-} from 'date-fns';
-import { kebabCase, camelCase } from 'lodash';
+import format from 'date-fns/format';
+import startOfMonth from 'date-fns/startOfDay';
+import sub from 'date-fns/sub';
+import nextDay from 'date-fns/nextDay';
+import lastDayOfMonth from 'date-fns/lastDayOfMonth';
+import add from 'date-fns/add';
+import kebabCase from 'lodash/kebabCase';
+import camelCase from 'lodash/camelCase';
 
 const OPTIONS = {
   today: (): void => void 0,
