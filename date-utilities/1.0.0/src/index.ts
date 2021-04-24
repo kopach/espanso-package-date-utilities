@@ -1,91 +1,50 @@
 #!/usr/bin/env node
 
-import { program } from 'commander';
 import format from 'date-fns/format';
 import startOfMonth from 'date-fns/startOfDay';
 import sub from 'date-fns/sub';
 import nextDay from 'date-fns/nextDay';
 import lastDayOfMonth from 'date-fns/lastDayOfMonth';
 import add from 'date-fns/add';
-import kebabCase from 'lodash/kebabCase';
-import camelCase from 'lodash/camelCase';
+const argv = require('minimist')(process.argv.slice(2));
 
 const OPTIONS = {
-  today: (): void => void 0,
-  tomorrow: (): void => void 0,
-  dayAfterTomorrow: (): void => void 0,
-  threeDaysFromNow: (): void => void 0,
-  fourDaysFromNow: (): void => void 0,
-  fiveDaysFromNow: (): void => void 0,
-  sixDaysFromNow: (): void => void 0,
-  weekFromNow: (): void => void 0,
-  yesterday: (): void => void 0,
-  dayBeforeYesterday: (): void => void 0,
-  threeDaysAgo: (): void => void 0,
-  fourDaysAgo: (): void => void 0,
-  fiveDaysAgo: (): void => void 0,
-  sixDaysAgo: (): void => void 0,
-  weekAgo: (): void => void 0,
-  lastSunday: (): void => void 0,
-  lastMonday: (): void => void 0,
-  lastTuesday: (): void => void 0,
-  lastWednesday: (): void => void 0,
-  lastThursday: (): void => void 0,
-  lastFriday: (): void => void 0,
-  lastSaturday: (): void => void 0,
-  nextSunday: (): void => void 0,
-  nextMonday: (): void => void 0,
-  nextTuesday: (): void => void 0,
-  nextWednesday: (): void => void 0,
-  nextThursday: (): void => void 0,
-  nextFriday: (): void => void 0,
-  nextSaturday: (): void => void 0,
-  firstDayOfThisMonth: (): void => void 0,
-  lastDayOfThisMonth: (): void => void 0,
-  firstDayOfNextMonth: (): void => void 0,
-  lastDayOfNextMonth: (): void => void 0,
-  firstDayOfPreviousMonth: (): void => void 0,
-  lastDayOfPreviousMonth: (): void => void 0,
+  today: 'd0',
+  tomorrow: 'd1',
+  dayAfterTomorrow: 'd2',
+  threeDaysFromNow: 'd3',
+  fourDaysFromNow: 'd4',
+  fiveDaysFromNow: 'd5',
+  sixDaysFromNow: 'd6',
+  weekFromNow: 'd7',
+  yesterday: 'd-1',
+  dayBeforeYesterday: 'd-2',
+  threeDaysAgo: 'd-3',
+  fourDaysAgo: 'd-4',
+  fiveDaysAgo: 'd-5',
+  sixDaysAgo: 'd-6',
+  weekAgo: 'd-7',
+  lastSunday: 'lsu',
+  lastMonday: 'lmo',
+  lastTuesday: 'ltu',
+  lastWednesday: 'lwe',
+  lastThursday: 'lth',
+  lastFriday: 'lfr',
+  lastSaturday: 'lsa',
+  nextSunday: 'nsu',
+  nextMonday: 'nmo',
+  nextTuesday: 'ntu',
+  nextWednesday: 'nwe',
+  nextThursday: 'nth',
+  nextFriday: 'nfr',
+  nextSaturday: 'nsa',
+  firstDayOfThisMonth: '1dtm',
+  lastDayOfThisMonth: 'ldtm',
+  firstDayOfNextMonth: '1dnm',
+  lastDayOfNextMonth: 'ldnm',
+  firstDayOfPreviousMonth: '1dpm',
+  lastDayOfPreviousMonth: 'ldpm',
 };
-
-program
-  .option(`-d0, ${toOption(OPTIONS.today)}`)
-  .option(`-d1, ${toOption(OPTIONS.tomorrow)}`)
-  .option(`-d2, ${toOption(OPTIONS.dayAfterTomorrow)}`)
-  .option(`-d3, ${toOption(OPTIONS.threeDaysFromNow)}`)
-  .option(`-d4, ${toOption(OPTIONS.fourDaysFromNow)}`)
-  .option(`-d5, ${toOption(OPTIONS.fiveDaysFromNow)}`)
-  .option(`-d6, ${toOption(OPTIONS.sixDaysFromNow)}`)
-  .option(`-d7, ${toOption(OPTIONS.weekFromNow)}`)
-  .option(`-d-1, ${toOption(OPTIONS.yesterday)}`)
-  .option(`-d-2, ${toOption(OPTIONS.dayBeforeYesterday)}`)
-  .option(`-d-3, ${toOption(OPTIONS.threeDaysAgo)}`)
-  .option(`-d-4, ${toOption(OPTIONS.fourDaysAgo)}`)
-  .option(`-d-5, ${toOption(OPTIONS.fiveDaysAgo)}`)
-  .option(`-d-6, ${toOption(OPTIONS.sixDaysAgo)}`)
-  .option(`-d-7, ${toOption(OPTIONS.weekAgo)}`)
-  .option(`-lsu, ${toOption(OPTIONS.lastSunday)}`)
-  .option(`-lmo, ${toOption(OPTIONS.lastMonday)}`)
-  .option(`-ltu, ${toOption(OPTIONS.lastTuesday)}`)
-  .option(`-lwe, ${toOption(OPTIONS.lastWednesday)}`)
-  .option(`-lth, ${toOption(OPTIONS.lastThursday)}`)
-  .option(`-lfr, ${toOption(OPTIONS.lastFriday)}`)
-  .option(`-lsa, ${toOption(OPTIONS.lastSaturday)}`)
-  .option(`-nsu, ${toOption(OPTIONS.nextSunday)}`)
-  .option(`-nmo, ${toOption(OPTIONS.nextMonday)}`)
-  .option(`-ntu, ${toOption(OPTIONS.nextTuesday)}`)
-  .option(`-nwe, ${toOption(OPTIONS.nextWednesday)}`)
-  .option(`-nth, ${toOption(OPTIONS.nextThursday)}`)
-  .option(`-nfr, ${toOption(OPTIONS.nextFriday)}`)
-  .option(`-nsa, ${toOption(OPTIONS.nextSaturday)}`)
-  .option(`-1dtm, ${toOption(OPTIONS.firstDayOfThisMonth)}`)
-  .option(`-ldtm, ${toOption(OPTIONS.lastDayOfThisMonth)}`)
-  .option(`-1dnm, ${toOption(OPTIONS.firstDayOfNextMonth)}`)
-  .option(`-ldnm, ${toOption(OPTIONS.lastDayOfNextMonth)}`)
-  .option(`-1dpm, ${toOption(OPTIONS.firstDayOfPreviousMonth)}`)
-  .option(`-ldpm, ${toOption(OPTIONS.lastDayOfPreviousMonth)}`);
-
-program.parse(process.argv);
 
 if (getOption(OPTIONS.today)) {
   const date = new Date();
@@ -196,14 +155,8 @@ if (getOption(OPTIONS.today)) {
 
 type Option = typeof OPTIONS[keyof typeof OPTIONS];
 
-function toOption(property: Option): string {
-  return `--${kebabCase(property.name)}`;
-}
-
 function getOption(property: Option): string {
-  const options = program.opts();
-
-  return options[camelCase(property.name)];
+  return argv[property];
 }
 
 function printFormatted(firstDayOfNextMonth: Date): void {
