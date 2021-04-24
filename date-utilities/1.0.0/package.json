@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "date-fns": "^2.21.1",
-    "execa": "4.1.0",
     "minimist": "^1.2.5"
   },
   "devDependencies": {
