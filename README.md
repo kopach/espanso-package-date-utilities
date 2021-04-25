@@ -1,8 +1,8 @@
-# Date utils
+# Date utilities
 
-[Espanso](https://espanso.org) package to easy get dates like: today, yesterday, last friday, 1-st day of last month, etc.
+[Espanso](https://espanso.org) package to easy get dates like: today, yesterday, last Friday, 1-st day of last month, etc.
 
-⭐️ Consider to star this package on [GitHub](https://github.com/kopach/espanso-package-date-utilities/stargazers) — it helps!
+⭐️ Consider starring this package on [GitHub](https://github.com/kopach/espanso-package-date-utilities/stargazers) — it helps!
 
 [✨ 👉 Check out my other espanso packages 👈 ✨](https://github.com/kopach?tab=repositories&q=espanso-package&type=source)
 
@@ -19,7 +19,7 @@
 > 1. [Espanso](https://espanso.org/install)
 > 2. [Node](https://nodejs.org)
 
-### Either install with `espanso install` (wating for https://github.com/federico-terzi/espanso-hub/issues/59)
+### Either install with `espanso install` (waiting for https://github.com/federico-terzi/espanso-hub/issues/59)
 
 ```sh
 espanso install date-utilities
@@ -55,20 +55,20 @@ That's all. You can start using the package.
 | `:d-5`  | Five days ago               |
 | `:d-6`  | Six days ago                |
 | `:d-7`  | Week ago                    |
-| `:lsu`  | Last sunday                 |
-| `:lmo`  | Last monday                 |
-| `:ltu`  | Last tuesday                |
-| `:lwe`  | Last wednesday              |
-| `:lth`  | Last thursday               |
-| `:lfr`  | Last friday                 |
-| `:lsa`  | Last saturday               |
-| `:nsu`  | Next sunday                 |
-| `:nmo`  | Next monday                 |
-| `:ntu`  | Next tuesday                |
-| `:nwe`  | Next wednesday              |
-| `:nth`  | Next thursday               |
-| `:nfr`  | Next friday                 |
-| `:nsa`  | Next saturday               |
+| `:lsu`  | Last Sunday                 |
+| `:lmo`  | Last Monday                 |
+| `:ltu`  | Last Tuesday                |
+| `:lwe`  | Last Wednesday              |
+| `:lth`  | Last Thursday               |
+| `:lfr`  | Last Friday                 |
+| `:lsa`  | Last Saturday               |
+| `:nsu`  | Next Sunday                 |
+| `:nmo`  | Next Monday                 |
+| `:ntu`  | Next Tuesday                |
+| `:nwe`  | Next Wednesday              |
+| `:nth`  | Next Thursday               |
+| `:nfr`  | Next Friday                 |
+| `:nsa`  | Next Saturday               |
 | `:1dtm` | First day of this month     |
 | `:ldtm` | Last day of this month      |
 | `:1dnm` | First day of next month     |
