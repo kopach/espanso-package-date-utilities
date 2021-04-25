@@ -6,7 +6,6 @@ import sub from 'date-fns/sub';
 import nextDay from 'date-fns/nextDay';
 import lastDayOfMonth from 'date-fns/lastDayOfMonth';
 import add from 'date-fns/add';
-const argv = require('minimist')(process.argv.slice(2));
 
 const OPTIONS = {
   today: 'd0',
@@ -46,117 +45,119 @@ const OPTIONS = {
   lastDayOfPreviousMonth: 'ldpm',
 };
 
-if (getOption(OPTIONS.today)) {
+if (isOptionEnabled(OPTIONS.today)) {
   const date = new Date();
   printFormatted(date);
-} else if (getOption(OPTIONS.tomorrow)) {
+} else if (isOptionEnabled(OPTIONS.tomorrow)) {
   const date = add(Date.now(), { days: 1 });
   printFormatted(date);
-} else if (getOption(OPTIONS.dayAfterTomorrow)) {
+} else if (isOptionEnabled(OPTIONS.dayAfterTomorrow)) {
   const date = add(Date.now(), { days: 2 });
   printFormatted(date);
-} else if (getOption(OPTIONS.threeDaysFromNow)) {
+} else if (isOptionEnabled(OPTIONS.threeDaysFromNow)) {
   const date = add(Date.now(), { days: 3 });
   printFormatted(date);
-} else if (getOption(OPTIONS.fourDaysFromNow)) {
+} else if (isOptionEnabled(OPTIONS.fourDaysFromNow)) {
   const date = add(Date.now(), { days: 4 });
   printFormatted(date);
-} else if (getOption(OPTIONS.fiveDaysFromNow)) {
+} else if (isOptionEnabled(OPTIONS.fiveDaysFromNow)) {
   const date = add(Date.now(), { days: 5 });
   printFormatted(date);
-} else if (getOption(OPTIONS.sixDaysFromNow)) {
+} else if (isOptionEnabled(OPTIONS.sixDaysFromNow)) {
   const date = add(Date.now(), { days: 6 });
   printFormatted(date);
-} else if (getOption(OPTIONS.weekFromNow)) {
+} else if (isOptionEnabled(OPTIONS.weekFromNow)) {
   const date = add(Date.now(), { days: 7 });
   printFormatted(date);
-} else if (getOption(OPTIONS.yesterday)) {
+} else if (isOptionEnabled(OPTIONS.yesterday)) {
   const date = sub(Date.now(), { days: 1 });
   printFormatted(date);
-} else if (getOption(OPTIONS.dayBeforeYesterday)) {
+} else if (isOptionEnabled(OPTIONS.dayBeforeYesterday)) {
   const date = sub(Date.now(), { days: 2 });
   printFormatted(date);
-} else if (getOption(OPTIONS.threeDaysAgo)) {
+} else if (isOptionEnabled(OPTIONS.threeDaysAgo)) {
   const date = sub(Date.now(), { days: 3 });
   printFormatted(date);
-} else if (getOption(OPTIONS.fourDaysAgo)) {
+} else if (isOptionEnabled(OPTIONS.fourDaysAgo)) {
   const date = sub(Date.now(), { days: 4 });
   printFormatted(date);
-} else if (getOption(OPTIONS.fiveDaysAgo)) {
+} else if (isOptionEnabled(OPTIONS.fiveDaysAgo)) {
   const date = sub(Date.now(), { days: 5 });
   printFormatted(date);
-} else if (getOption(OPTIONS.sixDaysAgo)) {
+} else if (isOptionEnabled(OPTIONS.sixDaysAgo)) {
   const date = sub(Date.now(), { days: 6 });
   printFormatted(date);
-} else if (getOption(OPTIONS.weekAgo)) {
+} else if (isOptionEnabled(OPTIONS.weekAgo)) {
   const date = sub(Date.now(), { days: 7 });
   printFormatted(date);
-} else if (getOption(OPTIONS.lastSunday)) {
+} else if (isOptionEnabled(OPTIONS.lastSunday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 0);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastMonday)) {
+} else if (isOptionEnabled(OPTIONS.lastMonday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 1);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastTuesday)) {
+} else if (isOptionEnabled(OPTIONS.lastTuesday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 2);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastWednesday)) {
+} else if (isOptionEnabled(OPTIONS.lastWednesday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 3);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastThursday)) {
+} else if (isOptionEnabled(OPTIONS.lastThursday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 4);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastFriday)) {
+} else if (isOptionEnabled(OPTIONS.lastFriday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 5);
   printFormatted(date);
-} else if (getOption(OPTIONS.lastSaturday)) {
+} else if (isOptionEnabled(OPTIONS.lastSaturday)) {
   const date = nextDay(sub(Date.now(), { weeks: 1, days: 1 }), 6);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextSunday)) {
+} else if (isOptionEnabled(OPTIONS.nextSunday)) {
   const date = nextDay(Date.now(), 0);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextMonday)) {
+} else if (isOptionEnabled(OPTIONS.nextMonday)) {
   const date = nextDay(Date.now(), 1);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextTuesday)) {
+} else if (isOptionEnabled(OPTIONS.nextTuesday)) {
   const date = nextDay(Date.now(), 2);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextWednesday)) {
+} else if (isOptionEnabled(OPTIONS.nextWednesday)) {
   const date = nextDay(Date.now(), 3);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextThursday)) {
+} else if (isOptionEnabled(OPTIONS.nextThursday)) {
   const date = nextDay(Date.now(), 4);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextFriday)) {
+} else if (isOptionEnabled(OPTIONS.nextFriday)) {
   const date = nextDay(Date.now(), 5);
   printFormatted(date);
-} else if (getOption(OPTIONS.nextSaturday)) {
+} else if (isOptionEnabled(OPTIONS.nextSaturday)) {
   const date = nextDay(Date.now(), 6);
   printFormatted(date);
-} else if (getOption(OPTIONS.firstDayOfThisMonth)) {
+} else if (isOptionEnabled(OPTIONS.firstDayOfThisMonth)) {
   const date = startOfMonth(Date.now());
   printFormatted(date);
-} else if (getOption(OPTIONS.lastDayOfThisMonth)) {
+} else if (isOptionEnabled(OPTIONS.lastDayOfThisMonth)) {
   const date = lastDayOfMonth(Date.now());
   printFormatted(date);
-} else if (getOption(OPTIONS.firstDayOfNextMonth)) {
+} else if (isOptionEnabled(OPTIONS.firstDayOfNextMonth)) {
   const date = startOfMonth(add(Date.now(), { months: 1 }));
   printFormatted(date);
-} else if (getOption(OPTIONS.lastDayOfNextMonth)) {
+} else if (isOptionEnabled(OPTIONS.lastDayOfNextMonth)) {
   const date = lastDayOfMonth(add(Date.now(), { months: 1 }));
   printFormatted(date);
-} else if (getOption(OPTIONS.firstDayOfPreviousMonth)) {
+} else if (isOptionEnabled(OPTIONS.firstDayOfPreviousMonth)) {
   const date = startOfMonth(sub(Date.now(), { months: 1, days: 1 }));
   printFormatted(date);
-} else if (getOption(OPTIONS.lastDayOfPreviousMonth)) {
+} else if (isOptionEnabled(OPTIONS.lastDayOfPreviousMonth)) {
   const date = lastDayOfMonth(sub(Date.now(), { months: 1, days: 1 }));
   printFormatted(date);
 }
 
 type Option = typeof OPTIONS[keyof typeof OPTIONS];
 
-function getOption(property: Option): string {
-  return argv[property];
+function isOptionEnabled(property: Option): boolean {
+  const argv = process.argv.slice(2);
+
+  return argv.includes(property);
 }
 
 function printFormatted(firstDayOfNextMonth: Date): void {
