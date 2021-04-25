@@ -19,8 +19,18 @@
 > 1. [Espanso](https://espanso.org/install)
 > 2. [Node](https://nodejs.org)
 
+### Either install with `espanso install` (wating for https://github.com/federico-terzi/espanso-hub/issues/59)
+
 ```sh
 espanso install date-utilities
+espanso restart
+```
+
+### Or using `git`
+
+```sh
+cd "$(espanso path config)/user"
+git clone https://github.com/kopach/espanso-package-date-utilities.git
 espanso restart
 ```
 
