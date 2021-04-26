@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import format from 'date-fns/format';
-import startOfMonth from 'date-fns/startOfDay';
+import startOfMonth from 'date-fns/startOfMonth';
 import sub from 'date-fns/sub';
 import nextDay from 'date-fns/nextDay';
 import lastDayOfMonth from 'date-fns/lastDayOfMonth';
@@ -160,6 +160,6 @@ function isOptionEnabled(property: Option): boolean {
   return argv.includes(property);
 }
 
-function printFormatted(firstDayOfNextMonth: Date): void {
-  console.log(format(firstDayOfNextMonth, 'dd MMM yyyy'));
+function printFormatted(date: Date): void {
+  console.log(format(date, '🗓 dd/MM/yyyy'));
 }
