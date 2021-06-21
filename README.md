@@ -19,7 +19,7 @@
 > 1. [Espanso](https://espanso.org/install)
 > 2. [Node](https://nodejs.org)
 
-### Either install with `espanso install` (waiting for https://github.com/federico-terzi/espanso-hub/issues/59)
+### Either install with `espanso install` (waiting for https://github.com/federico-terzi/espanso-hub/issues/59 which is currently blocked due to https://github.com/federico-terzi/espanso/issues/563#issuecomment-827868884)
 
 ```sh
 espanso install date-utilities
