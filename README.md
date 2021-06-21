@@ -80,6 +80,10 @@ That's all. You can start using the package.
 
 Please, feel free to contribute to this package on [GitHub](https://github.com/kopach/espanso-package-date-utilities)
 
+## TODO
+
+- [ ] add time format variable, so user can change time format (blocked by https://github.com/federico-terzi/espanso/issues/693)
+
 ## Credits
 
 Inspired by [Past and Future Dates](https://app.textexpander.com/group/2752BAC8-F54E-4E3E-8438-483542495069/snippets) for [Text Expander](https://textexpander.com) app
