@@ -6,6 +6,7 @@ import sub from 'date-fns/sub';
 import nextDay from 'date-fns/nextDay';
 import lastDayOfMonth from 'date-fns/lastDayOfMonth';
 import add from 'date-fns/add';
+import { startOfWeek } from 'date-fns';
 
 const OPTIONS = {
   today: 'd0',
@@ -37,12 +38,23 @@ const OPTIONS = {
   nextThursday: 'nth',
   nextFriday: 'nfr',
   nextSaturday: 'nsa',
+  // {{{ month
   firstDayOfThisMonth: '1dtm',
   lastDayOfThisMonth: 'ldtm',
   firstDayOfNextMonth: '1dnm',
   lastDayOfNextMonth: 'ldnm',
   firstDayOfPreviousMonth: '1dpm',
   lastDayOfPreviousMonth: 'ldpm',
+  // }}}
+  // {{{ day of this week
+  mondayThisWeek: 'motw',
+  tuesdayThisWeek: 'tutw',
+  wednesdayThisWeek: 'wetw',
+  thursdayThisWeek: 'thtw',
+  fridayThisWeek: 'frtw',
+  saturdayThisWeek: 'satw',
+  // sundayThisWeek: 'sutw', // TODO: this requires variable to define start of week
+  // }}}
 };
 
 if (isOptionEnabled(OPTIONS.today)) {
@@ -151,6 +163,27 @@ if (isOptionEnabled(OPTIONS.today)) {
   const date = lastDayOfMonth(sub(Date.now(), { months: 1, days: 1 }));
   printFormatted(date);
 }
+// {{{ day of this week
+else if (isOptionEnabled(OPTIONS.mondayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 1 });
+  printFormatted(date);
+} else if (isOptionEnabled(OPTIONS.tuesdayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 2 });
+  printFormatted(date);
+} else if (isOptionEnabled(OPTIONS.wednesdayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 3 });
+  printFormatted(date);
+} else if (isOptionEnabled(OPTIONS.thursdayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 4 });
+  printFormatted(date);
+} else if (isOptionEnabled(OPTIONS.fridayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 5 });
+  printFormatted(date);
+} else if (isOptionEnabled(OPTIONS.saturdayThisWeek)) {
+  const date = add(startOfWeek(Date.now()), { days: 6 });
+  printFormatted(date);
+}
+// }}}
 
 type Option = typeof OPTIONS[keyof typeof OPTIONS];
 
