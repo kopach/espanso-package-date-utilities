@@ -77,6 +77,12 @@ That's all. You can start using the package.
 | `:ldnm` | Last day of next month      |
 | `:1dpm` | First day of previous month |
 | `:ldpm` | Last day of previous month  |
+| `:motw` | Monday this week            |
+| `:tutw` | Tuesday this week           |
+| `:wetw` | Wednesday this week         |
+| `:thtw` | Thursday this week          |
+| `:frtw` | Friday this week            |
+| `:satw` | Saturday this week          |
 
 ## Contribute
 

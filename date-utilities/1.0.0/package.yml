@@ -354,3 +354,64 @@ matches:
             - node
             - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
             - 'ldpm'
+
+  - trigger: ':motw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'motw'
+  - trigger: ':tutw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'tutw'
+  - trigger: ':wetw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'wetw'
+  - trigger: ':thtw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'thtw'
+  - trigger: ':frtw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'frtw'
+  - trigger: ':satw'
+    replace: '{{output}}'
+    vars:
+      - name: output
+        type: script
+        params:
+          args:
+            - node
+            - '%CONFIG%/user/espanso-package-date-utilities/date-utilities/1.0.0/dist/index.js'
+            - 'satw'
