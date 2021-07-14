@@ -91,6 +91,7 @@ Please, feel free to contribute to this package on [GitHub](https://github.com/k
 ## TODO
 
 - [ ] add time format variable, so user can change time format (blocked by https://github.com/federico-terzi/espanso/issues/693)
+- [ ] add first day of week variable, so user can use date of Sunday of this/next/previous week (blocked by https://github.com/federico-terzi/espanso/issues/693)
 
 ## Credits
 
