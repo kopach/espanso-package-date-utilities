@@ -1,3 +1,5 @@
+[![#StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
+
 # Date utilities
 
 [Espanso](https://espanso.org) package to easy get dates like: today, yesterday, last Friday, 1-st day of last month, etc.
